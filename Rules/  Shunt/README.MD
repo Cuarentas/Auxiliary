@@ -8,33 +8,8 @@ Adblack广告规则来源于anti-AD 修改Actions每天自动构建
 ✍策略组内容及顺序
 规则集非碎片化，建议添加所有规则集确保完整性，注意规则集优先级
 
-🎯 全球直连：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/LocalAreaNetwork.list🚫 广告拦截：(⚠️低性能设备不建议添加)
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/Adblack.txt
-📢 谷歌服务：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/Google.list
-🤖 AI｜奈飞：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/OpenaiNetflix.list
-🎥 国外媒体：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/ProxyMedia.list
-Ⓜ️ 微软服务：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/Microsoft.list
-🍎 苹果服务：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/Apple.list
-📺 国内媒体：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/ChinaMedia.list
-🎮 游戏平台：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/GamesPlatform.list
-📡 IP｜测速：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/IpinfoSpeedtest.list
-📲 电报消息：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/Telegram.list
-✈️ 国外常规：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/ProxyGFWlist.list
-🎯 全球直连：
-https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/GlobalDirect.list
-🎯 全球直连：GEOIP,CN
-🐟 漏网之鱼：FINAL
+
+
 ⚠️免责声明
 本项目的部分内容收集于互联网，仅供资源共享和学习研究之用，不能保证其合法性、准确性、完整性和有效性。请用户根据具体情况自行判断其适用性。
 任何间接使用脚本的用户，包括但不限于搭建VPS或在某些行为违反国家/地区法律或相关法规的情况下进行传播，本项目对于由此引起的任何隐私泄漏或其他后果概不负责。
