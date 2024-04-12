@@ -1,1 +1,276 @@
+################################################################################################################################
+# 创建者:JiaBei-Q                                                                                                              #
+# 客户端:Stash                                                                                                           #
+# 创建日期:2024-03-03 10:10:01                                                                                                 #
+# 托管地址:https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Configure/QuantumultX/QuantumultX.conf      #                       
+################################################################################################################################
 
+# > [+]2024-03-03      第一次配置    暂未进行深入修改；后期将加入更多规则及脚本；
+
+
+
+ 
+# > 图标备用：📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱ 🔜🛫📶🔜📶🛫☠️👽👣👉🥷🧞‍♀️🧚‍♀️🙅🙅‍♂️🤳🪡⛑💍🧢🐍🪲🐞🐠🦜🎄🪐🌎🌍🌏❄️🍱🍭🍡🍩🧃🍶⛳️🪁🏹🎣🏂🪂⛷🥇🥈🥉🏅🎖🎮🎲🏍✈️🛫🛬🛩🛰🚀🛸⚓️🚦🗼🏝🎡📱📲💻⌨️🖥🕹💾💿📀🎥📟🧭⌛️⏳📡🪫💰💳🪪💎⚖️🛠🔨⚙️⛓🛡🚬💈🔭🔬💉🩸🧬🦠📩💌📥📤📌📍🔗🔐🔒🔓❤️‍🩹💘💞💕❣️💓💗🩷❤️🧡💛💚🩵💙💜🖤🩶🤍🤎💔💝💘💟☮️✝️☪️🕉☸️🪯✡️🔯🕎☯️☦️🛐⛎♈️♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️🆔⚛️☢️☣️📴📳🉑🈶🈚️🈸🈺🈷️✴️🆚💮🉐㊙️㊗️🈴🈵🈹🈲🅰️🅱️🆎🆑🅾️🆘❌⭕️🛑⛔️📛🚫💯💢♨️🚷🚯🚳🚱🔞📵🚭❗️❓‼️⁉️〽️⚠️🚸🔱⚜️🔰♻️✅🈯️💹❇️✳️❎🌐💠Ⓜ️🌀💤🏧🚾♿️🅿️🛗🈳🈂️🛂🛃🛄🛅🛜🚹🚺🚼⚧🚻🚮🎦📶🈁🔣ℹ️🔤🔡🔠🆖🆗🆙🆒🆕🆓0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟🔢#️⃣*️⃣⏏️▶️⏸⏯⏹⏺⏭⏮⏩⏪⏫⏬◀️🔼🔽➡️⬅️⬆️⬇️↗️↘️↙️↖️↕️↔️↪️↩️⤴️⤵️🔀🔁🔂🔄🔃🎵🎶➕➖➗✖️🟰♾™️©️®️🔚🔙🔛🔝🔜➿🔔🔕📣💬🀄️
+
+
+# ☢️ 通用配置头
+mixed-port: 7890                                                              # ☢️ 混合端口，HTTP和SOCKS5用一个端口
+allow-lan: true                                                               # ☢️ 允许局域网的连接（共享代理）
+bind-address: "*"                                                             # ☢️ 监听IP白名单，可绑定单个IPv4和v6地址，"*" 为绑定所有IP地址，仅在将allow-lan设置为true时适用
+ipv6: true                                                                    # ☢️ 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+mode: rule                                                                    # ☢️ 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
+log-level: info                                                               # ☢️ 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
+external-controller: 127.0.0.1:9090                                           # ☢️ 外部控制器监听地址，可以使用 RESTful API 来控制你的 clash 内核
+dns:
+  enable: true                                                                # ☢️ 关闭将使用系统 DNS
+  ipv6: true                                                                  # ☢️ IPV6解析开关；如果为false，将返回ipv6结果为空
+  enhanced-mode: fake-ip                                                      # ☢️ 模式：redir-host或fake-ip
+  listen: 0.0.0.0:53                                                          # ☢️ DNS 监听地址
+  default-nameserver: [223.5.5.5, 119.29.29.29]                               # ☢️ 解析非IP的dns用的dns服务器，只支持纯IP
+  nameserver: [https://dns.alidns.com/dns-query, https://doh.pub/dns-query]   # ☢️ 默认DNS服务器，支持udp/tcp/dot/doh/doq
+  fake-ip-range: 198.18.0.1/16                                                # ☢️ Fake-IP 解析地址池
+  fake-ip-filter: ['*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'network-test.debian.org', 'detectportal.firefox.com', 'resolver1.opendns.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', 'global.turn.twilio.com', 'global.stun.twilio.com', 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', 'musicapi.taihe.com', 'music.taihe.com', 'songsearch.kugou.com', 'trackercdn.kugou.com', '*.kuwo.cn', 'api-jooxtt.sanook.com', 'api.joox.com', 'joox.com', 'y.qq.com', '*.y.qq.com', 'streamoc.music.tc.qq.com', 'mobileoc.music.tc.qq.com', 'isure.stream.qqmusic.qq.com', 'dl.stream.qqmusic.qq.com', 'aqqmusic.tc.qq.com', 'amobile.music.tc.qq.com', '*.xiami.com', '*.music.migu.cn', 'music.migu.cn', 'proxy.golang.org', '*.mcdn.bilivideo.cn', '*.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
+                                                                              # ☢️ Fake-ip 过滤，列表中的域名返回真实IP
+# ☢️☢️☢️☢️☢️☢️☢️☢️  锚点 start  ☢️☢️☢️☢️☢️☢️☢️☢️#
+
+# ☢️ 规则行为相关
+c: &c {type: http, behavior: classical, interval: 86400}
+d: &d {type: http, behavior: domain, interval: 86400}
+i: &i {type: http, behavior: ipcidr, interval: 86400}
+
+# ☢️ 代理组相关
+g: &g {type: select, proxies: [Proxy, Auto, Fallback, HongKong, TaiWan, Singapore, Japan, America, Others, DIRECT]}
+
+# ☢️ 远程订阅相关
+p: &p {type: http, interval: 86400, benchmark-timeout: 5, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 600}}
+
+# ☢️ 订阅引用相关
+u: &u {type: select, use: [Subscribe]}
+
+# ☢️☢️☢️☢️☢️☢️☢️☢️ 锚点 end  ☢️☢️☢️☢️☢️☢️☢️☢️#
+
+# ☢️ 本地服务器
+proxies: null
+
+# ☢️ 远程订阅
+proxy-providers: 
+  Subscribe: {<<: *p, path: ./proxy_providers/subscribe.yaml, url: "https://tt.vg/Gitlab-V"}      
+                                                                           # ☢️ 1. 请使用Clash类型订阅链接填入引号""内使用,
+                                                                           # ☢️ 2. 或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)。
+
+# ☢️ 代理组
+proxy-groups: 
+
+# ☢️ 漏网之鱼
+ - {name: Final, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/mar/main/Icon/Other/Download/001-100/98.png, <<: *g, proxies: [Proxy,DIRECT]}
+
+# ☢️ 节点切换
+ - {name: Proxy, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/96.png, <<: *g, proxies: [Auto,Fallback,HongKong,TaiWan,Singapore,Japan,America,Others]}
+
+# ☢️ 自动选择
+ - {name: Auto, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/95.png, type: url-test, lazy: true, <<: *u}
+
+# ☢️ 故障转移
+ - {name: Fallback, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/92.png, type: fallback, <<: *u}
+
+# ☢️ 国外网站
+ - {name: Global, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/89.png, <<: *g}
+
+# ☢️ 国内网站
+ - {name: Mainland, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/88.png, <<: *g, proxies: [DIRECT,Proxy,Auto]}
+
+# ☢️ 人工智能
+ - {name: OpenAI, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/83.png, <<: *g, proxies: [America,Japan,Singapore,TaiWan,Others]}
+
+# ☢️ 油管视频
+ - {name: YouTube, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/80.png, <<: *g}
+
+# ☢️ 奈飞影视
+ - {name: NETFLIX, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/78.png, <<: *g}
+
+# ☢️ 迪士尼+
+ - {name: Disney+, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/77.png, <<: *g}
+
+# ☢️ Emby
+ - {name: Emby, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/76.png, <<: *g}
+
+# ☢️ 哔哩哔哩
+ - {name: BiliBili, icon: https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Icon/Other/Download/001-100/74.png, <<: *g, proxies: [DIRECT,HongKong,TaiWan]}
+
+# ☢️ 声田音乐
+ - {name: Spotify, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Spotify.png, <<: *g}
+
+# ☢️ 网易云音乐
+ - {name: NetEaseMusic, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png, <<: *g, proxies: [DIRECT,Proxy]}
+
+# ☢️ 海外抖音
+ - {name: TikTok, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/TikTok.png, <<: *g}
+
+# ☢️ 国际媒体
+ - {name: Streaming, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Streaming.png, <<: *g}
+
+# ☢️ 电报信息
+ - {name: Telegram, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png, <<: *g}
+
+# ☢️ 苹果服务
+ - {name: Apple, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Apple_1.png, <<: *g, proxies: [DIRECT, Proxy, Auto, Fallback, HongKong, TaiWan, Singapore, Japan, America, Others]}
+
+# ☢️ 谷歌服务
+ - {name: Google, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Google_Search.png, <<: *g}
+
+# ☢️ 微软服务
+ - {name: Microsoft, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Windows_11.png, <<: *g}
+
+# ☢️ 游戏平台
+ - {name: Games, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Game.png, <<: *g}
+
+# ☢️ 网络测试
+ - {name: Speedtest, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Speedtest.png, <<: *g, proxies: [Proxy,DIRECT]}
+
+# ☢️ 香港节点
+ - {name: HongKong, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png, <<: *u, filter: "港|🇭🇰|HK|(?i)Hong"}
+
+# ☢️ 台湾节点
+ - {name: TaiWan, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/China.png, <<: *u, filter: "台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan"}
+
+# ☢️ 狮城节点
+ - {name: Singapore, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Singapore.png, <<: *u, filter: "新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore"}
+
+# ☢️ 日本节点
+ - {name: Japan, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Japan.png, <<: *u, filter: "日|🇯🇵|东京|JP|(?i)Japan"}
+
+# ☢️ 美国节点
+ - {name: America, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/United_States.png, <<: *u, filter: "美|🇺🇲|US|(?i)States|American"}
+
+# ☢️ 其他节点
+ - {name: Others, icon: https://521github.com/extdomains/raw.gitmirror.com/Koolson/Qure/master/IconSet/Color/Airport.png, <<: *u, filter: "^((?!香港|HK|Hong Kong|台湾|TW|TaiWan|新加坡|SG|Singapore|狮城|日本|JP|Japan|美国|US|States|American)).*$"}
+
+# ☢️ 远程规则集
+rule-providers:
+
+# ☢️ 隐私网络
+ private-domain: {<<: *d, path: ./ruleset/private-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml}
+ private-ip: {<<: *i, path: ./ruleset/private-ip.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml}
+
+# ☢️ 网络测试
+ speedtest-domain: {<<: *d, path: ./ruleset/speedtest-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/speedtest.yaml}
+
+# ☢️ 人工智能
+ openai-classical: {<<: *c, path: ./ruleset/openai-classical.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/Coldvvater/Mononoke/master/Stash/RuleSet/AI.yaml}
+
+# ☢️ 油管视频
+ youtube-domain: {<<: *d, path: ./ruleset/youtube-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.yaml}
+
+# ☢️ 奈飞影视
+ netflix-domain: {<<: *d, path: ./ruleset/netflix-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.yaml}
+ netflix-ip: {<<: *i, path: ./ruleset/netflix-ip.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.yaml}
+
+# ☢️ 迪士尼+
+ disney-domain: {<<: *d, path: ./ruleset/disney-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.yaml}
+
+# ☢️ Emby
+ emby-classical: {<<: *c, path: ./ruleset/emby-classical.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml}
+
+# ☢️ 动画疯
+ bahamut-domain: {<<: *d, path: ./ruleset/bahamut-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.yaml}
+
+# ☢️ 哔哩哔哩东南亚
+ biliintl-domain: {<<: *d, path: ./ruleset/biliintl-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.yaml}
+
+# ☢️ 哔哩哔哩
+ bilibili-domain: {<<: *d, path: ./ruleset/bilibili-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml}
+ bilibili-ip: {<<: *i, path: ./ruleset/bilibili-ip.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/bilibili.yaml}
+
+# ☢️ 声田音乐
+ spotify-domain: {<<: *d, path: ./ruleset/spotify-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.yaml}
+
+# ☢️ 网易云音乐
+ neteasemusic-classical: {<<: *c, path: ./ruleset/neteasemusic-classical.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic_No_Resolve.yaml}
+
+# ☢️ 海外抖音
+ tiktok-domain: {<<: *d, path: ./ruleset/tiktok-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.yaml}
+
+# ☢️ 国际媒体
+ streamingmedia-classical: {<<: *c, path: ./ruleset/streamingmedia-classical.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml}
+
+# ☢️ 电报信息
+ telegram-domain: {<<: *d, path: ./ruleset/telegram-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml}
+ telegram-ip: {<<: *i, path: ./ruleset/telegram-ip.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml}
+
+# ☢️ GitHub
+ github-domain: {<<: *d, path: ./ruleset/github-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.yaml}
+
+# ☢️ Twitter
+ twitter-domain: {<<: *d, path: ./ruleset/twitter-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.yaml}
+ twitter-ip: {<<: *i, path: ./ruleset/twitter-ip.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.yaml}
+
+# ☢️ TestFlight
+ testflight-classical: {<<: *c, path: ./ruleset/testflight-classical.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/TestFlight/TestFlight.yaml}
+
+# ☢️ 苹果服务
+ apple-domain: {<<: *d, path: ./ruleset/apple-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.yaml}
+ apple-ip: {<<: *i, path: ./ruleset/apple-ip.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.yaml}
+
+# ☢️ 谷歌服务
+ google-domain: {<<: *d, path: ./ruleset/google-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.yaml}
+ google-ip: {<<: *i, path: ./ruleset/google-ip.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml}
+
+# ☢️ 微软服务
+ microsoft-domain: {<<: *d, path: ./ruleset/microsoft-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.yaml}
+
+# ☢️ 游戏平台
+ games-classical: {<<: *c, path: ./ruleset/games-classical.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game_No_Resolve.yaml}
+
+# ☢️ 国内网站
+ cn-domain: {<<: *d, path: ./ruleset/cn-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geosite/cn.yaml}
+
+# ☢️ 国外网站
+ proxy-domain: {<<: *d, path: ./ruleset/proxy-domain.yaml, url: https://521github.com/extdomains/raw.gitmirror.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml}
+
+# ☢️ 分流规则引用
+rules:
+# ☢️  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
+# ☢️  - SCRIPT,quic,REJECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.metacubex.one,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,d.metacubex.one,DIRECT
+
+  - RULE-SET,private-domain,DIRECT
+  - RULE-SET,speedtest-domain,Speedtest
+  - RULE-SET,openai-classical,OpenAI
+  - RULE-SET,youtube-domain,YouTube
+  - RULE-SET,netflix-domain,NETFLIX
+  - RULE-SET,disney-domain,Disney+
+  - RULE-SET,emby-classical,Emby
+  - RULE-SET,bahamut-domain,TaiWan
+  - RULE-SET,biliintl-domain,Streaming
+  - RULE-SET,bilibili-domain,BiliBili
+  - RULE-SET,spotify-domain,Spotify
+  - RULE-SET,neteasemusic-classical,NetEaseMusic
+  - RULE-SET,tiktok-domain,TikTok
+  - RULE-SET,streamingmedia-classical,Streaming
+  - RULE-SET,telegram-domain,Telegram
+  - RULE-SET,github-domain,Global
+  - RULE-SET,twitter-domain,Global
+  - RULE-SET,testflight-classical,Global
+  - RULE-SET,apple-domain,Apple
+  - RULE-SET,google-domain,Google
+  - RULE-SET,microsoft-domain,Microsoft
+  - RULE-SET,games-classical,Games
+  - RULE-SET,proxy-domain,Global
+
+  - RULE-SET,google-ip,Google
+  - RULE-SET,netflix-ip,NETFLIX
+  - RULE-SET,telegram-ip,Telegram
+  - RULE-SET,twitter-ip,Global
+  - RULE-SET,cn-domain,Mainland
+  - RULE-SET,bilibili-ip,BiliBili
+  - RULE-SET,apple-ip,Apple
+  - RULE-SET,private-ip,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Final
+
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
