@@ -49,6 +49,8 @@ https://521github.com/extdomains/raw.githubusercontent.com/ermaozi/get_subscribe
 https://521github.com/extdomains/raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml
 https://521github.com/extdomains/raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_proxies_new.yaml
 https://521github.com/extdomains/raw.githubusercontent.com/WilliamStar007/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.yaml
+https://521github.com/extdomains/raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num
+https://521github.com/extdomains/raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
 http://150.230.195.209:12580/clash/proxies
 http://174.137.58.32:12580/clash/proxies
 http://175.178.182.178:12580/clash/proxies
