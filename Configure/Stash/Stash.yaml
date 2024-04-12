@@ -54,7 +54,7 @@ proxies: null
 
 # ☢️ 远程订阅
 proxy-providers: 
-  Subscribe: {<<: *p, path: ./proxy_providers/subscribe.yaml, url: "https://tt.vg/Gitlab-C"}      
+  Subscribe: {<<: *p, path: ./proxy_providers/subscribe.yaml, url: "https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Configure/Clash/Clash.yaml"}      
                                                                            # ☢️ 1. 请使用Clash类型订阅链接填入引号""内使用,
                                                                            # ☢️ 2. 或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)。
 
