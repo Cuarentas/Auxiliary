@@ -8,7 +8,7 @@
 ### 策略组内容及顺序
 > 规则集非碎片化，建议添加所有规则集确保完整性，注意规则集优先级
 - **🎯 全球直连**：
-  - [https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/LocalAreaNetwork.list](https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/LocalAreaNetwork.list)
+  - *[https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/LocalAreaNetwork.list](https://raw.githubusercontent.com/mphin/ProxyTools/main/rules/LocalAreaNetwork.list)*
 - **🚫 广告拦截**：(⚠️低性能设备不建议添加)
   -
 - **📢 谷歌服务**：
