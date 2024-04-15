@@ -47,7 +47,5 @@
 - [@ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 - [@mphin/ProxyTools](https://github.com/mphin/ProxyTools?tab=readme-ov-file)
 - [@privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)
-## 📈项目 Star 数增长趋势
-[![Stargazers over time](https://starchart.cc/mphin/ProxyTools.svg)](https://starchart.cc/mphin/ProxyTools)
 
 **本仓库创建于2024年3月3日**
