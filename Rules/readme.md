@@ -5,7 +5,7 @@
 * 规则数量: 8330条
 * 最近更新: 2024年04月06日15:21:34
 
-#### 策略组内容及顺序
+### 策略组内容及顺序
 > 规则集非碎片化，建议添加所有规则集确保完整性，注意规则集优先级
 - **🎯 全球直连**：
   - *[https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/LocalAreaNetwork.list](https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/LocalAreaNetwork.list)*
