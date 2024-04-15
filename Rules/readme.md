@@ -33,8 +33,8 @@
   - *[https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/ProxyGFWlist.list](https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/ProxyGFWlist.list)*
 - **🎯 全球直连**：
   - *[https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/GlobalDirect.list](https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/GlobalDirect.list)*
-- **🎯 全球直连**：GEOIP,CN
-- **🐟 漏网之鱼**：FINAL
+- **🎯 全球直连**：*GEOIP,CN*
+- **🐟 漏网之鱼**：*FINAL*
 ### ⚠️免责声明
 - 本项目的部分内容收集于互联网，仅供资源共享和学习研究之用，不能保证其合法性、准确性、完整性和有效性。请用户根据具体情况自行判断其适用性。
 - 任何间接使用脚本的用户，包括但不限于搭建VPS或在某些行为违反国家/地区法律或相关法规的情况下进行传播，本项目对于由此引起的任何隐私泄漏或其他后果概不负责。
