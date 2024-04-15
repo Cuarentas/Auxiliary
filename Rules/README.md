@@ -24,7 +24,7 @@
 - **📺 国内媒体**：
   - *[https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/ChinaMedia.list](https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/ChinaMedia.list)*
 - **🎮 游戏平台**：
-  - *[https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/GamesPlatform](https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/GamesPlatform)*
+  - *[https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/GamesPlatform.list](https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/GamesPlatform.list)*
 - **📡 IP｜测速**：
   - *[https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/IPinfoSpeedtest.list](https://521github.com/extdomains/github.com/JiaBei-Q/Auxiliary/raw/main/Rules/IPinfoSpeedtest.list)*
 - **📲 电报消息**：
