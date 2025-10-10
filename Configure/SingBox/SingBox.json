@@ -1,0 +1,1958 @@
+
+
+
+
+
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "secret": "",
+      "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "direct",
+      "default_mode": "rule"
+    },
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": true,
+      "store_rdrc": true
+    }
+  },
+  "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
+    "servers": [
+      {
+        "tag": "google",
+        "address": "tls://8.8.8.8"
+      },
+      {
+        "tag": "local",
+        "address": "https://223.5.5.5/dns-query",
+        "detour": "direct"
+      },
+      {
+        "tag": "fakeip",
+        "address": "fakeip"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "cdn.jsdelivr.net"
+        ],
+        "server": "google"
+      },
+      {
+        "outbound": "any",
+        "server": "local"
+      },
+      {
+        "clash_mode": "direct",
+        "server": "local"
+      },
+      {
+        "clash_mode": "global",
+        "server": "google"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "rule_set": "geosite-cn",
+        "server": "fakeip"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "server": "local"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
+        "server": "google",
+        "client_subnet": "114.114.114.114/24"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
+      }
+    ],
+    "independent_cache": true,
+    "strategy": "prefer_ipv4"
+  },
+  "inbounds": [
+    {
+      "tag": "tun-in",
+      "type": "tun",
+      "address": [
+        "172.19.0.0/30",
+        "fdfe:dcba:9876::0/126"
+      ],
+      "stack": "system",
+      "auto_route": true,
+      "strict_route": true,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 7890
+        }
+      }
+    },
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 7890
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "Proxy",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "direct",
+        "❤㍿☯优选IP-22㍿☯❤_1",
+        "✈️™☢️㊙️本地优选IP4-08㊙️☪️™✈️_2",
+        "❤㍿☯优选IP-14㍿☯❤_3",
+        "❤㍿☯优选IP-12㍿☯❤_4",
+        "✈️™☢️㊙️本地优选IP4-04㊙️☪️™✈️_5",
+        "❤㍿☯优选IP-04㍿☯❤_6",
+        "❤㍿☯优选IP-27㍿☯❤_7",
+        "❤㍿☯优选IP-24㍿☯❤_8",
+        "✈️™☢️㊙️MLL-01㊙️☪️™✈️_9",
+        "❤㍿☯优选IP-28㍿☯❤_10",
+        "✈️™☢️㊙️本地优选IP4-03㊙️☪️™✈️_11",
+        "❤㍿☯优选IP-15㍿☯❤_12",
+        "❤㍿☯优选IP-06㍿☯❤_13",
+        "❤㍿☯优选IP-17㍿☯❤_14",
+        "❤㍿☯优选IP-30㍿☯❤_15",
+        "❤㍿☯优选IP-23㍿☯❤_16",
+        "✈️™☢️㊙️MLL-04㊙️☪️™✈️_17",
+        "✈️™☢️㊙️MLL-03㊙️☪️™✈️_18",
+        "❤㍿☯优选IP-20㍿☯❤_19",
+        "❤㍿☯优选IP-09㍿☯❤_20",
+        "❤㍿☯优选IP-05㍿☯❤_21",
+        "✈️™☢️㊙️本地优选IP4-01㊙️☪️™✈️_22",
+        "❤㍿☯优选IP-19㍿☯❤_23",
+        "❤㍿☯优选IP-08㍿☯❤_24",
+        "✈️™☢️㊙️本地优选IP4-07㊙️☪️™✈️_25",
+        "❤㍿☯优选IP-13㍿☯❤_26",
+        "❤㍿☯优选IP-33㍿☯❤_27",
+        "🤩❂✬‼️🇺🇸留置测试用-2‼️✬❂🤩_28",
+        "🤩❂✬‼️🇺🇸留置测试用‼️✬❂🤩_29",
+        "❤㍿☯优选IP-10㍿☯❤_30",
+        "❤㍿☯优选IP-02㍿☯❤_31",
+        "✈️™☢️㊙️本地优选IP4-10㊙️☪️™✈️_32",
+        "✈️™☢️㊙️本地优选IP4-06㊙️☪️™✈️_33",
+        "❤㍿☯优选IP-07㍿☯❤_34",
+        "✈️™☢️㊙️MLL-02㊙️☪️™✈️_35",
+        "✈️™☢️㊙️本地优选IP4-02㊙️☪️™✈️_36",
+        "❤㍿☯优选IP-01㍿☯❤_37",
+        "❤㍿☯优选IP-32㍿☯❤_38",
+        "❤㍿☯优选IP-21㍿☯❤_39",
+        "❤㍿☯优选IP-16㍿☯❤_40",
+        "✈️™☢️㊙️本地优选IP4-05㊙️☪️™✈️_41",
+        "❤㍿☯优选IP-31㍿☯❤_42",
+        "✈️™☢️㊙️本地优选IP4-09㊙️☪️™✈️_43",
+        "❤㍿☯优选IP-26㍿☯❤_44",
+        "❤㍿☯优选IP-11㍿☯❤_45",
+        "❤㍿☯优选IP-25㍿☯❤_46",
+        "❤㍿☯优选IP-18㍿☯❤_47",
+        "❤㍿☯优选IP-29㍿☯❤_48",
+        "❤㍿☯优选IP-03㍿☯❤_49",
+        "✈️™☢️㊙️本地优选IP4-11㊙️☪️™✈️_50"
+      ]
+    },
+    {
+      "tag": "OpenAI",
+      "type": "selector",
+      "outbounds": [
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ],
+      "default": "America"
+    },
+    {
+      "tag": "Google",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Telegram",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Twitter",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Facebook",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "BiliBili",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "HongKong",
+        "TaiWan"
+      ]
+    },
+    {
+      "tag": "Bahamut",
+      "type": "selector",
+      "outbounds": [
+        "TaiWan",
+        "Proxy"
+      ]
+    },
+    {
+      "tag": "Spotify",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ],
+      "default": "America"
+    },
+    {
+      "tag": "TikTok",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America"
+      ],
+      "default": "Japan"
+    },
+    {
+      "tag": "Netflix",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Disney+",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Apple",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Microsoft",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Games",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Streaming",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
+      "tag": "Global",
+      "type": "selector",
+      "outbounds": [
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others",
+        "direct"
+      ]
+    },
+    {
+      "tag": "China",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "Proxy"
+      ]
+    },
+    {
+      "tag": "HongKong",
+      "type": "selector",
+      "outbounds": [
+        "Proxy"
+      ]
+    },
+    {
+      "tag": "TaiWan",
+      "type": "selector",
+      "outbounds": [
+        "Proxy"
+      ]
+    },
+    {
+      "tag": "Singapore",
+      "type": "selector",
+      "outbounds": [
+        "Proxy"
+      ]
+    },
+    {
+      "tag": "Japan",
+      "type": "selector",
+      "outbounds": [
+        "Proxy"
+      ]
+    },
+    {
+      "tag": "America",
+      "type": "selector",
+      "outbounds": [
+        "🤩❂✬‼️🇺🇸留置测试用-2‼️✬❂🤩_28",
+        "🤩❂✬‼️🇺🇸留置测试用‼️✬❂🤩_29"
+      ]
+    },
+    {
+      "tag": "Others",
+      "type": "selector",
+      "outbounds": [
+        "❤㍿☯优选IP-22㍿☯❤_1",
+        "✈️™☢️㊙️本地优选IP4-08㊙️☪️™✈️_2",
+        "❤㍿☯优选IP-14㍿☯❤_3",
+        "❤㍿☯优选IP-12㍿☯❤_4",
+        "✈️™☢️㊙️本地优选IP4-04㊙️☪️™✈️_5",
+        "❤㍿☯优选IP-04㍿☯❤_6",
+        "❤㍿☯优选IP-27㍿☯❤_7",
+        "❤㍿☯优选IP-24㍿☯❤_8",
+        "✈️™☢️㊙️MLL-01㊙️☪️™✈️_9",
+        "❤㍿☯优选IP-28㍿☯❤_10",
+        "✈️™☢️㊙️本地优选IP4-03㊙️☪️™✈️_11",
+        "❤㍿☯优选IP-15㍿☯❤_12",
+        "❤㍿☯优选IP-06㍿☯❤_13",
+        "❤㍿☯优选IP-17㍿☯❤_14",
+        "❤㍿☯优选IP-30㍿☯❤_15",
+        "❤㍿☯优选IP-23㍿☯❤_16",
+        "✈️™☢️㊙️MLL-04㊙️☪️™✈️_17",
+        "✈️™☢️㊙️MLL-03㊙️☪️™✈️_18",
+        "❤㍿☯优选IP-20㍿☯❤_19",
+        "❤㍿☯优选IP-09㍿☯❤_20",
+        "❤㍿☯优选IP-05㍿☯❤_21",
+        "✈️™☢️㊙️本地优选IP4-01㊙️☪️™✈️_22",
+        "❤㍿☯优选IP-19㍿☯❤_23",
+        "❤㍿☯优选IP-08㍿☯❤_24",
+        "✈️™☢️㊙️本地优选IP4-07㊙️☪️™✈️_25",
+        "❤㍿☯优选IP-13㍿☯❤_26",
+        "❤㍿☯优选IP-33㍿☯❤_27",
+        "❤㍿☯优选IP-10㍿☯❤_30",
+        "❤㍿☯优选IP-02㍿☯❤_31",
+        "✈️™☢️㊙️本地优选IP4-10㊙️☪️™✈️_32",
+        "✈️™☢️㊙️本地优选IP4-06㊙️☪️™✈️_33",
+        "❤㍿☯优选IP-07㍿☯❤_34",
+        "✈️™☢️㊙️MLL-02㊙️☪️™✈️_35",
+        "✈️™☢️㊙️本地优选IP4-02㊙️☪️™✈️_36",
+        "❤㍿☯优选IP-01㍿☯❤_37",
+        "❤㍿☯优选IP-32㍿☯❤_38",
+        "❤㍿☯优选IP-21㍿☯❤_39",
+        "❤㍿☯优选IP-16㍿☯❤_40",
+        "✈️™☢️㊙️本地优选IP4-05㊙️☪️™✈️_41",
+        "❤㍿☯优选IP-31㍿☯❤_42",
+        "✈️™☢️㊙️本地优选IP4-09㊙️☪️™✈️_43",
+        "❤㍿☯优选IP-26㍿☯❤_44",
+        "❤㍿☯优选IP-11㍿☯❤_45",
+        "❤㍿☯优选IP-25㍿☯❤_46",
+        "❤㍿☯优选IP-18㍿☯❤_47",
+        "❤㍿☯优选IP-29㍿☯❤_48",
+        "❤㍿☯优选IP-03㍿☯❤_49",
+        "✈️™☢️㊙️本地优选IP4-11㊙️☪️™✈️_50"
+      ]
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "outbounds": [
+        "❤㍿☯优选IP-22㍿☯❤_1",
+        "✈️™☢️㊙️本地优选IP4-08㊙️☪️™✈️_2",
+        "❤㍿☯优选IP-14㍿☯❤_3",
+        "❤㍿☯优选IP-12㍿☯❤_4",
+        "✈️™☢️㊙️本地优选IP4-04㊙️☪️™✈️_5",
+        "❤㍿☯优选IP-04㍿☯❤_6",
+        "❤㍿☯优选IP-27㍿☯❤_7",
+        "❤㍿☯优选IP-24㍿☯❤_8",
+        "✈️™☢️㊙️MLL-01㊙️☪️™✈️_9",
+        "❤㍿☯优选IP-28㍿☯❤_10",
+        "✈️™☢️㊙️本地优选IP4-03㊙️☪️™✈️_11",
+        "❤㍿☯优选IP-15㍿☯❤_12",
+        "❤㍿☯优选IP-06㍿☯❤_13",
+        "❤㍿☯优选IP-17㍿☯❤_14",
+        "❤㍿☯优选IP-30㍿☯❤_15",
+        "❤㍿☯优选IP-23㍿☯❤_16",
+        "✈️™☢️㊙️MLL-04㊙️☪️™✈️_17",
+        "✈️™☢️㊙️MLL-03㊙️☪️™✈️_18",
+        "❤㍿☯优选IP-20㍿☯❤_19",
+        "❤㍿☯优选IP-09㍿☯❤_20",
+        "❤㍿☯优选IP-05㍿☯❤_21",
+        "✈️™☢️㊙️本地优选IP4-01㊙️☪️™✈️_22",
+        "❤㍿☯优选IP-19㍿☯❤_23",
+        "❤㍿☯优选IP-08㍿☯❤_24",
+        "✈️™☢️㊙️本地优选IP4-07㊙️☪️™✈️_25",
+        "❤㍿☯优选IP-13㍿☯❤_26",
+        "❤㍿☯优选IP-33㍿☯❤_27",
+        "🤩❂✬‼️🇺🇸留置测试用-2‼️✬❂🤩_28",
+        "🤩❂✬‼️🇺🇸留置测试用‼️✬❂🤩_29",
+        "❤㍿☯优选IP-10㍿☯❤_30",
+        "❤㍿☯优选IP-02㍿☯❤_31",
+        "✈️™☢️㊙️本地优选IP4-10㊙️☪️™✈️_32",
+        "✈️™☢️㊙️本地优选IP4-06㊙️☪️™✈️_33",
+        "❤㍿☯优选IP-07㍿☯❤_34",
+        "✈️™☢️㊙️MLL-02㊙️☪️™✈️_35",
+        "✈️™☢️㊙️本地优选IP4-02㊙️☪️™✈️_36",
+        "❤㍿☯优选IP-01㍿☯❤_37",
+        "❤㍿☯优选IP-32㍿☯❤_38",
+        "❤㍿☯优选IP-21㍿☯❤_39",
+        "❤㍿☯优选IP-16㍿☯❤_40",
+        "✈️™☢️㊙️本地优选IP4-05㊙️☪️™✈️_41",
+        "❤㍿☯优选IP-31㍿☯❤_42",
+        "✈️™☢️㊙️本地优选IP4-09㊙️☪️™✈️_43",
+        "❤㍿☯优选IP-26㍿☯❤_44",
+        "❤㍿☯优选IP-11㍿☯❤_45",
+        "❤㍿☯优选IP-25㍿☯❤_46",
+        "❤㍿☯优选IP-18㍿☯❤_47",
+        "❤㍿☯优选IP-29㍿☯❤_48",
+        "❤㍿☯优选IP-03㍿☯❤_49",
+        "✈️™☢️㊙️本地优选IP4-11㊙️☪️™✈️_50"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-22㍿☯❤_1",
+      "server": "104.27.124.52",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-08㊙️☪️™✈️_2",
+      "server": "172.67.118.240",
+      "server_port": 80,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-14㍿☯❤_3",
+      "server": "141.101.115.46",
+      "server_port": 2052,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-12㍿☯❤_4",
+      "server": "104.19.24.76",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-04㊙️☪️™✈️_5",
+      "server": "104.19.193.147",
+      "server_port": 8880,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-04㍿☯❤_6",
+      "server": "172.67.84.81",
+      "server_port": 2095,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-27㍿☯❤_7",
+      "server": "104.24.135.66",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-24㍿☯❤_8",
+      "server": "172.64.34.112",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️MLL-01㊙️☪️™✈️_9",
+      "server": "104.25.223.0",
+      "server_port": 80,
+      "uuid": "99f86940-f3f1-4c93-9241-21eb2ec19285",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "mll-20231109.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "mll-20231109.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-28㍿☯❤_10",
+      "server": "173.245.49.139",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-03㊙️☪️™✈️_11",
+      "server": "104.25.239.216",
+      "server_port": 2052,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-15㍿☯❤_12",
+      "server": "162.159.15.248",
+      "server_port": 2082,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-06㍿☯❤_13",
+      "server": "104.25.246.204",
+      "server_port": 2082,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-17㍿☯❤_14",
+      "server": "104.19.42.55",
+      "server_port": 2095,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-30㍿☯❤_15",
+      "server": "104.19.80.8",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-23㍿☯❤_16",
+      "server": "104.17.177.120",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️MLL-04㊙️☪️™✈️_17",
+      "server": "172.64.158.117",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️MLL-03㊙️☪️™✈️_18",
+      "server": "104.25.144.236",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-20㍿☯❤_19",
+      "server": "104.19.233.52",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-09㍿☯❤_20",
+      "server": "104.25.191.8",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-05㍿☯❤_21",
+      "server": "162.159.39.194",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-01㊙️☪️™✈️_22",
+      "server": "104.24.175.155",
+      "server_port": 80,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-19㍿☯❤_23",
+      "server": "23.227.39.19",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-08㍿☯❤_24",
+      "server": "162.159.38.162",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-07㊙️☪️™✈️_25",
+      "server": "104.25.79.119",
+      "server_port": 2095,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-13㍿☯❤_26",
+      "server": "104.17.17.152",
+      "server_port": 8880,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-33㍿☯❤_27",
+      "server": "104.25.74.187",
+      "server_port": 2086,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🤩❂✬‼️🇺🇸留置测试用-2‼️✬❂🤩_28",
+      "server": "104.25.6.78",
+      "server_port": 8880,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🤩❂✬‼️🇺🇸留置测试用‼️✬❂🤩_29",
+      "server": "104.25.235.25",
+      "server_port": 8880,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-10㍿☯❤_30",
+      "server": "104.24.250.31",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-02㍿☯❤_31",
+      "server": "104.16.249.247",
+      "server_port": 2052,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-10㊙️☪️™✈️_32",
+      "server": "104.16.147.17",
+      "server_port": 8880,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-06㊙️☪️™✈️_33",
+      "server": "141.101.114.245",
+      "server_port": 2086,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-07㍿☯❤_34",
+      "server": "104.18.115.177",
+      "server_port": 2082,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️MLL-02㊙️☪️™✈️_35",
+      "server": "104.18.227.178",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-02㊙️☪️™✈️_36",
+      "server": "104.19.123.25",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-01㍿☯❤_37",
+      "server": "104.18.173.134",
+      "server_port": 8880,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-32㍿☯❤_38",
+      "server": "141.101.121.25",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-21㍿☯❤_39",
+      "server": "104.19.217.77",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-16㍿☯❤_40",
+      "server": "104.16.229.191",
+      "server_port": 2086,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-05㊙️☪️™✈️_41",
+      "server": "104.16.174.40",
+      "server_port": 2082,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-31㍿☯❤_42",
+      "server": "104.16.246.245",
+      "server_port": 80,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-09㊙️☪️™✈️_43",
+      "server": "104.18.72.227",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-26㍿☯❤_44",
+      "server": "104.16.124.187",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-11㍿☯❤_45",
+      "server": "104.18.127.134",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-25㍿☯❤_46",
+      "server": "104.16.130.183",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-18㍿☯❤_47",
+      "server": "104.16.174.230",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-29㍿☯❤_48",
+      "server": "172.67.105.174",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "❤㍿☯优选IP-03㍿☯❤_49",
+      "server": "104.17.181.129",
+      "server_port": 8080,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "✈️™☢️㊙️本地优选IP4-11㊙️☪️™✈️_50",
+      "server": "104.25.189.47",
+      "server_port": 8880,
+      "uuid": "d7137707-92f3-4eaa-abea-21d0f905d066",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "poison.xiaohuaxan.workers.dev"
+        }
+      },
+      "tls": {
+        "server_name": "poison.xiaohuaxan.workers.dev",
+        "utls": {
+          "fingerprint": "randomized",
+          "enabled": true
+        }
+      }
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "Proxy",
+    "rules": [
+      {
+        "inbound": [
+          "tun-in",
+          "mixed-in"
+        ],
+        "action": "sniff"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 53
+          },
+          {
+            "protocol": "dns"
+          }
+        ],
+        "action": "hijack-dns"
+      },
+      {
+        "rule_set": "geosite-category-ads-all",
+        "clash_mode": "rule",
+        "action": "reject"
+      },
+      {
+        "rule_set": "geosite-category-ads-all",
+        "clash_mode": "global",
+        "outbound": "Proxy"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "Proxy"
+      },
+      {
+        "domain": [
+          "clash.razord.top",
+          "yacd.metacubex.one",
+          "yacd.haishan.me",
+          "d.metacubex.one"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geosite-openai",
+        "outbound": "OpenAI"
+      },
+      {
+        "rule_set": [
+          "geosite-youtube",
+          "geoip-google",
+          "geosite-google",
+          "geosite-github"
+        ],
+        "outbound": "Google"
+      },
+      {
+        "rule_set": [
+          "geoip-telegram",
+          "geosite-telegram"
+        ],
+        "outbound": "Telegram"
+      },
+      {
+        "rule_set": [
+          "geoip-twitter",
+          "geosite-twitter"
+        ],
+        "outbound": "Twitter"
+      },
+      {
+        "rule_set": [
+          "geoip-facebook",
+          "geosite-facebook"
+        ],
+        "outbound": "Facebook"
+      },
+      {
+        "rule_set": "geosite-bilibili",
+        "outbound": "BiliBili"
+      },
+      {
+        "rule_set": "geosite-bahamut",
+        "outbound": "Bahamut"
+      },
+      {
+        "rule_set": "geosite-spotify",
+        "outbound": "Spotify"
+      },
+      {
+        "rule_set": "geosite-tiktok",
+        "outbound": "TikTok"
+      },
+      {
+        "rule_set": [
+          "geoip-netflix",
+          "geosite-netflix"
+        ],
+        "outbound": "Netflix"
+      },
+      {
+        "rule_set": "geosite-disney",
+        "outbound": "Disney+"
+      },
+      {
+        "rule_set": [
+          "geoip-apple",
+          "geosite-apple",
+          "geosite-amazon"
+        ],
+        "outbound": "Apple"
+      },
+      {
+        "rule_set": "geosite-microsoft",
+        "outbound": "Microsoft"
+      },
+      {
+        "rule_set": [
+          "geosite-category-games",
+          "geosite-dmm"
+        ],
+        "outbound": "Games"
+      },
+      {
+        "rule_set": [
+          "geosite-hbo",
+          "geosite-primevideo"
+        ],
+        "outbound": "Streaming"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "outbound": "Global"
+      },
+      {
+        "rule_set": [
+          "geoip-cn",
+          "geosite-cn"
+        ],
+        "outbound": "China"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-category-ads-all",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-openai",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/Toperlock/sing-box-geosite@main/rule/OpenAI.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-youtube",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geoip-google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-github",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geoip-telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geoip-twitter",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/twitter.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-twitter",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geoip-facebook",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/facebook.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-facebook",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/facebook.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-bilibili",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-bahamut",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bahamut.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-spotify",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-tiktok",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geoip-netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-disney",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geoip-apple",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-apple",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-amazon",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/amazon.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-microsoft",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-category-games",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-dmm",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/dmm.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-hbo",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-primevideo",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/primevideo.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-geolocation-!cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geoip-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "download_detour": "direct"
+      }
+    ]
+  }
+}
