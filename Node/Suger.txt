@@ -1,8 +1,1 @@
-trojan://installshield@38.114.120.66:8443?security=tls&allowInsecure=1&type=tcp&headerType=none#%3E%F0%9F%87%AC%F0%9F%87%A7%2BGB%7CHs%7C1001%7CTG%40FProxies%7C
-trojan://installshield@193.108.118.184:8443?security=tls&allowInsecure=1&type=tcp&headerType=none#%3E%F0%9F%87%A9%F0%9F%87%AA%2BDE%7CHs%7C1001%7CTG%40FProxies%7C
-trojan://installshield@38.180.126.206:8443?security=tls&allowInsecure=1&type=tcp&headerType=none#%3E%F0%9F%87%A8%F0%9F%87%A6%2BCA%7CHs%7C1001%7CTG%40FProxies%7C
-trojan://fg20mtCFHy@imcgr.zippydeal.xyz:5571?security=tls&allowInsecure=1&type=tcp&headerType=none#%3E%F0%9F%87%AE%F0%9F%87%B9%2BIT%7CHs%7C1001%7CTG%40FProxies%7C
-trojan://installshield@38.180.244.116:8443?security=tls&allowInsecure=1&type=tcp&headerType=none#%3E%F0%9F%87%BA%F0%9F%87%B8%2BUS%7CHs%7C1001%7CTG%40FProxies%7C
-trojan://installshield@38.143.66.225:8443?security=tls&allowInsecure=1&type=tcp&headerType=none#%3E%F0%9F%87%BA%F0%9F%87%B8%2BUS%7CMs%7C1001%7CTG%40FProxies%7C
-trojan://5551bd34-4ce2-4c0a-8600-12cd746c815e@baigou1.kkieo555.cn:21863?security=tls&sni=douyin.com&allowInsecure=1&type=tcp&headerType=none#%F0%9F%87%AE%F0%9F%87%B3
-trojan://5551bd34-4ce2-4c0a-8600-12cd746c815e@baigou1.kkieo555.cn:21869?security=tls&sni=douyin.com&allowInsecure=1&type=tcp&headerType=none#%F0%9F%87%AE%F0%9F%87%B3
+vmess://eyJ2IjoiMiIsInBzIjoiU0NQfFVTMDMiLCJhZGQiOiJ3dG8ub3JnIiwicG9ydCI6NDQzLCJpZCI6ImQ1N2FjMTczLTU2MTUtNDNkYi1hM2Y0LWRkMWFlYmIyYzZlOCIsImFpZCI6MCwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJob3N0IjoidXMwMS5zZWNudHJlLmNvbSIsInBhdGgiOiIvZDU3YWMxNzMtNTYxNS00M2RiLWEzZjQtZGQxYWViYjJjNmU4LXZtP2VkPTIwNDgiLCJ0bHMiOiJ0bHMiLCJzbmkiOiJ1czAxLnNlY250cmUuY29tIn0=
