@@ -2,3 +2,19 @@
 🇪🇸 西班牙 = ss,37.143.130.203,990,encrypt-method=null,tfo=false,udp-relay=false
 🇺🇸 美国_9 = vmess,61.73.36.4,25700,username=5ee5f222-f3b3-4f6a-b3ac-83b7c71a0212,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=/5ee5f222-f3b3-4f6a-b3ac-83b7c71a0212-vmess,ws-headers=host:"afan3.pages.dev",sni=61.73.36.4,skip-cert-verify=true,tfo=false,udp-relay=false
 🇮🇹 意大利 = ss,212.102.54.45,990,encrypt-method=null,tfo=false,udp-relay=false
+tg频道:@ripaojiedian = ss,34.245.185.129,443,encrypt-method=aes-256-cfb,password=amazonskr05,tfo=false,udp-relay=false
+香港|@ripaojiedian = vmess,v9.heduian.link,30809,username=cbb3f877-d1fb-344c-87a9-d153bffd5484,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/oooo,ws-headers=host:"baidu.com",sni=v9.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+香港2|@ripaojiedian = ss,103.103.245.158,443,encrypt-method=aes-256-gcm,password=ccf426f1fe78,obfs=http,obfs-host=newroot2v1.dsjsapp.com,tfo=false,udp-relay=false
+香港3|@ripaojiedian = vmess,103.224.80.67,30485,username=a9ba904e-2d8b-401e-9226-b5114c049f05,tls=false,vmess-aead=false,tls13=false,sni=103.224.80.67,skip-cert-verify=true,tfo=false,udp-relay=false
+香港4|@ripaojiedian = trojan,221.128.195.221,4419,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+香港6|@ripaojiedian = trojan,126.47.92.160,443,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=fe2.update.microsoft.com,tfo=false,udp-relay=false
+日本|@ripaojiedian = vmess,v6.heduian.link,30806,username=cbb3f877-d1fb-344c-87a9-d153bffd5484,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/oooo,ws-headers=host:"ocbc.com",sni=v6.heduian.link,skip-cert-verify=true,tfo=false,udp-relay=false
+日本2|@ripaojiedian = trojan,36.156.102.84,1806,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+日本3|@ripaojiedian = trojan,36.156.102.84,3160,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+新加坡|@ripaojiedian = trojan,36.156.102.84,2173,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+新加坡2|@ripaojiedian = trojan,36.156.102.84,5321,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+新加坡3|@ripaojiedian = ss,5.44.249.43,2377,encrypt-method=chacha20-ietf-poly1305,password=t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv,obfs=http,tfo=false,udp-relay=false
+美国|@ripaojiedian = trojan,36.156.102.84,24673,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=fe2.update.microsoft.com,tfo=false,udp-relay=false
+美国2|@ripaojiedian = trojan,36.156.102.84,2381,password=253bc477d4e43c209f2d427272968280,skip-cert-verify=true,sni=fe2.update.microsoft.com,tfo=false,udp-relay=false
+美国3|@ripaojiedian = trojan,92.243.75.49,2087,password=wb6368,skip-cert-verify=true,sni=hsdgbuys.pages.dev,ws=true,ws-path=/,ws-headers=host:"hsdgbuys.pages.dev",tfo=false,udp-relay=false
+越南|@ripaojiedian = ss,103.186.155.136,38388,encrypt-method=aes-256-cfb,password=Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV,tfo=false,udp-relay=false
