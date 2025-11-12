@@ -8,3 +8,14 @@
 香港-11.91MB/s = trojan,219.76.135.188,443,password=1b57001bd214304027025a740b6cf1ac,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
 香港-570.5KB/s = trojan,203.198.122.97,443,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
 香港-31.58MB/s = trojan,219.77.239.35,443,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_1 = trojan,120.233.151.17,22745,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_2 = trojan,120.197.94.136,38193,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_3 = trojan,211.72.156.83,15682,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_4 = trojan,61.221.84.27,18427,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_5 = trojan,61.221.110.227,10226,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_6 = trojan,120.233.151.18,28115,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_7 = trojan,120.197.94.138,28115,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_8 = trojan,120.233.151.18,28114,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_9 = trojan,120.197.94.138,28114,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/zyzzzoao ⚡️_10 = trojan,120.233.151.18,28101,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
+
