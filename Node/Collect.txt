@@ -1,122 +1,70 @@
-原生地址-443-Trojan-WS-TLS = trojan,eve.zzym.netlib.re,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-原生地址-80-Trojan-WS = trojan,eve.zzym.netlib.re,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cloudflare.182682.xyz-443-Trojan-WS-TLS = trojan,cloudflare.182682.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cloudflare.182682.xyz-80-Trojan-WS = trojan,cloudflare.182682.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-speed.marisalnc.com-443-Trojan-WS-TLS = trojan,speed.marisalnc.com,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-speed.marisalnc.com-80-Trojan-WS = trojan,speed.marisalnc.com,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS = trojan,freeyx.cloudflare88.eu.org,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-freeyx.cloudflare88.eu.org-80-Trojan-WS = trojan,freeyx.cloudflare88.eu.org,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-bestcf.top-443-Trojan-WS-TLS = trojan,bestcf.top,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-bestcf.top-80-Trojan-WS = trojan,bestcf.top,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cdn.2020111.xyz-443-Trojan-WS-TLS = trojan,cdn.2020111.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cdn.2020111.xyz-80-Trojan-WS = trojan,cdn.2020111.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cfip.cfcdn.vip-443-Trojan-WS-TLS = trojan,cfip.cfcdn.vip,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cfip.cfcdn.vip-80-Trojan-WS = trojan,cfip.cfcdn.vip,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cf.0sm.com-443-Trojan-WS-TLS = trojan,cf.0sm.com,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cf.0sm.com-80-Trojan-WS = trojan,cf.0sm.com,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cf.090227.xyz-443-Trojan-WS-TLS = trojan,cf.090227.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cf.090227.xyz-80-Trojan-WS = trojan,cf.090227.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cf.zhetengsha.eu.org-443-Trojan-WS-TLS = trojan,cf.zhetengsha.eu.org,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cf.zhetengsha.eu.org-80-Trojan-WS = trojan,cf.zhetengsha.eu.org,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cloudflare.9jy.cc-443-Trojan-WS-TLS = trojan,cloudflare.9jy.cc,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cloudflare.9jy.cc-80-Trojan-WS = trojan,cloudflare.9jy.cc,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS = trojan,cf.zerone-cdn.pp.ua,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cf.zerone-cdn.pp.ua-80-Trojan-WS = trojan,cf.zerone-cdn.pp.ua,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cfip.1323123.xyz-443-Trojan-WS-TLS = trojan,cfip.1323123.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cfip.1323123.xyz-80-Trojan-WS = trojan,cfip.1323123.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS = trojan,cnamefuckxxs.yuchen.icu,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cnamefuckxxs.yuchen.icu-80-Trojan-WS = trojan,cnamefuckxxs.yuchen.icu,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS = trojan,cloudflare-ip.mofashi.ltd,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cloudflare-ip.mofashi.ltd-80-Trojan-WS = trojan,cloudflare-ip.mofashi.ltd,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-115155.xyz-443-Trojan-WS-TLS = trojan,115155.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-115155.xyz-80-Trojan-WS = trojan,115155.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cname.xirancdn.us-443-Trojan-WS-TLS = trojan,cname.xirancdn.us,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cname.xirancdn.us-80-Trojan-WS = trojan,cname.xirancdn.us,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-f3058171cad.002404.xyz-443-Trojan-WS-TLS = trojan,f3058171cad.002404.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-f3058171cad.002404.xyz-80-Trojan-WS = trojan,f3058171cad.002404.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-8.889288.xyz-443-Trojan-WS-TLS = trojan,8.889288.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-8.889288.xyz-80-Trojan-WS = trojan,8.889288.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cdn.tzpro.xyz-443-Trojan-WS-TLS = trojan,cdn.tzpro.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cdn.tzpro.xyz-80-Trojan-WS = trojan,cdn.tzpro.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-cf.877771.xyz-443-Trojan-WS-TLS = trojan,cf.877771.xyz,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-cf.877771.xyz-80-Trojan-WS = trojan,cf.877771.xyz,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-xn--b6gac.eu.org-443-Trojan-WS-TLS = trojan,xn--b6gac.eu.org,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-xn--b6gac.eu.org-80-Trojan-WS = trojan,xn--b6gac.eu.org,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_1 = trojan,104.17.237.29,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_1 = trojan,104.17.237.29,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_2 = trojan,104.21.29.212,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_2 = trojan,104.21.29.212,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_3 = trojan,104.21.31.169,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_3 = trojan,104.21.31.169,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_4 = trojan,104.16.63.229,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_4 = trojan,104.16.63.229,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_5 = trojan,104.19.175.153,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_5 = trojan,104.19.175.153,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-联通-443-Trojan-WS-TLS_1 = trojan,104.17.191.131,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-联通-80-Trojan-WS_1 = trojan,104.17.191.131,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-联通-443-Trojan-WS-TLS_2 = trojan,104.18.222.76,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-联通-80-Trojan-WS_2 = trojan,104.18.222.76,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-联通-443-Trojan-WS-TLS_3 = trojan,104.19.158.175,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-联通-80-Trojan-WS_3 = trojan,104.19.158.175,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-联通-443-Trojan-WS-TLS_4 = trojan,104.16.238.219,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-联通-80-Trojan-WS_4 = trojan,104.16.238.219,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-联通-443-Trojan-WS-TLS_5 = trojan,104.19.205.150,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-联通-80-Trojan-WS_5 = trojan,104.19.205.150,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_1 = trojan,104.19.95.167,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_1 = trojan,104.19.95.167,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_2 = trojan,104.21.63.80,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_2 = trojan,104.21.63.80,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_3 = trojan,172.64.94.245,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_3 = trojan,172.64.94.245,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_4 = trojan,104.16.79.140,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_4 = trojan,104.16.79.140,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_5 = trojan,172.64.40.80,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_5 = trojan,172.64.40.80,80,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_6 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_6 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_7 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_7 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_8 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_8 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_9 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_9 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-移动-443-Trojan-WS-TLS_10 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-移动-80-Trojan-WS_10 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_6 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_6 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_7 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_7 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_8 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_8 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_9 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_9 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-电信-443-Trojan-WS-TLS_10 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-电信-80-Trojan-WS_10 = trojan,[2606,4700,password=eve-djd,skip-cert-verify=true,tfo=false,udp-relay=false
-加入频道@kejiland00-443-Trojan-WS-TLS = trojan,saas.sin.fan,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-SG-43254-Trojan-WS-TLS = trojan,138.2.89.238,43254,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-NL-443-Trojan-WS-TLS_1 = trojan,86.107.197.161,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-NL-443-Trojan-WS-TLS_2 = trojan,95.179.140.212,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-DE-443-Trojan-WS-TLS_1 = trojan,147.45.197.119,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-10001-Trojan-WS-TLS = trojan,142.171.192.140,10001,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-21182-Trojan-WS-TLS = trojan,142.171.156.141,21182,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-DE-443-Trojan-WS-TLS_2 = trojan,89.169.54.138,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-SG-32962-Trojan-WS-TLS = trojan,138.2.89.64,32962,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-DE-8443-Trojan-WS-TLS = trojan,147.45.196.240,8443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-33189-Trojan-WS-TLS = trojan,155.248.193.100,33189,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-AU-7443-Trojan-WS-TLS = trojan,170.64.152.77,7443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-DE-2053-Trojan-WS-TLS = trojan,147.45.196.240,2053,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-SE-2053-Trojan-WS-TLS_1 = trojan,91.108.241.5,2053,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-NL-443-Trojan-WS-TLS_3 = trojan,193.109.69.48,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-8443-Trojan-WS-TLS = trojan,172.93.43.15,8443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-AT-443-Trojan-WS-TLS_1 = trojan,94.177.8.23,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-JP-2919-Trojan-WS-TLS = trojan,158.101.152.6,2919,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-65501-Trojan-WS-TLS = trojan,167.234.216.84,65501,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-53300-Trojan-WS-TLS = trojan,152.67.248.2,53300,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-SE-2053-Trojan-WS-TLS_2 = trojan,78.40.117.65,2053,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-58869-Trojan-WS-TLS = trojan,146.235.209.40,58869,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-DE-8899-Trojan-WS-TLS = trojan,85.198.11.18,8899,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-AT-443-Trojan-WS-TLS_2 = trojan,94.177.8.10,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-50235-Trojan-WS-TLS = trojan,154.17.29.80,50235,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-US-50971-Trojan-WS-TLS = trojan,174.137.52.235,50971,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-SE-8443-Trojan-WS-TLS = trojan,95.163.240.24,8443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
-AT-443-Trojan-WS-TLS_3 = trojan,94.177.8.34,443,password=eve-djd,skip-cert-verify=true,sni=eve.zzym.netlib.re,tfo=false,udp-relay=false
+🇫🇷 法国 格拉沃利讷OVH数据中心 = vmess,ov-germany4.09vpn.com,8443,username=cfc66d8d-48b5-434f-b92d-22de1907ced7,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=/vmess/,ws-headers=host:"ov-germany4.09vpn.com",sni=ov-germany4.09vpn.com,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/ForceRunVPN-🇵🇱-Warsaw-597ms-OVH SAS = vmess,146.59.85.226,443,username=03fcc618-b93d-6796-6aed-8a38c975d581,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=linkvws,ws-headers=host:"pelang.org",sni=146.59.85.226,skip-cert-verify=true,tfo=false,udp-relay=false
+✅سرورهایبیشتردرکانال:prrofile_purple@✅ = vmess,51.68.191.233,80,username=f0eda072-9ae8-494c-a495-215fa5729467,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/vmess/,sni=51.68.191.233,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/ForceRunVPN-🇵🇱-Warsaw-666ms-OVH SAS = vmess,57.128.216.125,443,username=03fcc618-b93d-6796-6aed-8a38c975d581,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=linkvws,ws-headers=host:"kampong.org",sni=57.128.216.125,skip-cert-verify=true,tfo=false,udp-relay=false
+4Nika-13157 = vmess,45.116.78.152,57916,username=9bb10f51-3afe-41a0-afd4-4347e2e1d108,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=45.116.78.152,skip-cert-verify=true,tfo=false,udp-relay=false
+🇵🇱PL_35_@Surfboardv2ray = vmess,146.59.55.50,443,username=03fcc618-b93d-6796-6aed-8a38c975d581,tls=true,vmess-aead=true,tls13=false,ws=true,ws-path=/linkvws,ws-headers=host:"o.metuji.com",sni=146.59.55.50,skip-cert-verify=true,tfo=false,udp-relay=false
+@meli_proxyy = vmess,45.116.78.152,7151,username=a3a95415-b7f3-4f1f-9486-bee6a68feaa2,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=45.116.78.152,skip-cert-verify=true,tfo=false,udp-relay=false
+4Nika-20577 = vmess,ov-germany7.09vpn.com,8443,username=8b7ec98d-c291-4034-9719-e6d62051636a,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=/vmess/,sni=ov-germany7.09vpn.com,skip-cert-verify=true,tfo=false,udp-relay=false
+🔒 VM-WS-TLS 🇫🇷 FR-51.68.189.39:8443 = vmess,51.68.189.39,8443,username=cfc66d8d-48b5-434f-b92d-22de1907ced7,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=/vmess/,sni=51.68.189.39,skip-cert-verify=true,tfo=false,udp-relay=false
+https://t.me/ForceRunVPN-🇵🇱-Warsaw-645ms-OVH SAS = vmess,146.59.118.250,443,username=03fcc618-b93d-6796-6aed-8a38c975d581,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=linkvws,ws-headers=host:"lammaland.org",sni=146.59.118.250,skip-cert-verify=true,tfo=false,udp-relay=false
+🇦🇷 www.bsbb.cc ss-AR 132ms = ss,azure-sto.edgeservers.org,48172,encrypt-method=chacha20-ietf-poly1305,password=51yloQC8D9w1Wae7FHtI65,tfo=false,udp-relay=false
+🇩🇪 www.bsbb.cc trojan-DE 134ms = trojan,36.151.192.242,194,password=BxceQaOe,skip-cert-verify=true,tfo=false,udp-relay=false
+🇧🇪 www.bsbb.cc trojan-BE 58ms = trojan,36.151.192.242,4556,password=BxceQaOe,skip-cert-verify=true,tfo=false,udp-relay=false
+🇵🇱 www.bsbb.cc trojan-PL 49ms = trojan,36.150.215.239,24392,password=BxceQaOe,skip-cert-verify=true,tfo=false,udp-relay=false
+🇷🇴 www.bsbb.cc trojan-RO 57ms = trojan,36.150.215.239,53743,password=BxceQaOe,skip-cert-verify=true,tfo=false,udp-relay=false
+🇩🇪 www.bsbb.cc trojan-DE 63ms = trojan,www.digitalocean.com,443,password=trojan,skip-cert-verify=true,sni=azadnet-9ya.pages.dev,tfo=false,udp-relay=false
+🇩🇪 www.bsbb.cc trojan-DE 74ms = trojan,ip.sb,443,password=trojan,skip-cert-verify=true,sni=nixian.pages.dev,tfo=false,udp-relay=false
+🇨🇴 www.bsbb.cc ss-CO 81ms = ss,204.136.10.115,1866,encrypt-method=chacha20-ietf-poly1305,password=oXGp1+ihlfKg826H,tfo=false,udp-relay=false
+🇦🇪 www.bsbb.cc ss-AE 137ms = ss,45.87.175.28,8080,encrypt-method=chacha20-ietf-poly1305,password=oZIoA69Q8yhcQV8ka3Pa3A,tfo=false,udp-relay=false
+🇳🇿 www.bsbb.cc ss-NZ 137ms = ss,172.233.128.126,1866,encrypt-method=chacha20-ietf-poly1305,password=oXGp1+ihlfKg826H,tfo=false,udp-relay=false
+🇭🇰 www.bsbb.cc ss-HK 44ms = ss,45.150.32.13,14628,encrypt-method=chacha20-ietf-poly1305,password=DKyRdoqQIebdKZVYs5GzW8,tfo=false,udp-relay=false
+🇵🇭 www.bsbb.cc ss-PH 53ms = ss,45.144.54.33,34803,encrypt-method=chacha20-ietf-poly1305,password=LiHQX9cDbdooBHlIg0eiqQ,tfo=false,udp-relay=false
+🇸🇮 www.bsbb.cc ss-SI 59ms_1 = ss,213.109.147.242,62685,encrypt-method=chacha20-ietf-poly1305,password=VpKABcOpNNA0l5G2AVOmw8,tfo=false,udp-relay=false
+🇲🇾 www.bsbb.cc ss-MY 119ms = ss,147.45.178.200,57456,encrypt-method=chacha20-ietf-poly1305,password=a58fa62b4944ddbf,tfo=false,udp-relay=false
+🇷🇴 www.bsbb.cc ss-RO 43ms = ss,81.19.137.222,57456,encrypt-method=chacha20-ietf-poly1305,password=a58fa62b4944ddbf,tfo=false,udp-relay=false
+🇰🇭 www.bsbb.cc ss-KH 124ms = ss,164.92.156.41,24206,encrypt-method=chacha20-ietf-poly1305,password=zI7kiNZ0UfV9cXB73a4nRD,tfo=false,udp-relay=false
+🇵🇱 www.bsbb.cc ss-PL 84ms = ss,185.177.229.245,1866,encrypt-method=chacha20-ietf-poly1305,password=oXGp1+ihlfKg826H,tfo=false,udp-relay=false
+🇺🇸 www.bsbb.cc ss-US 127ms = ss,46.101.245.131,44354,encrypt-method=chacha20-ietf-poly1305,password=9RviNa4tscjcmCB408vLSg,tfo=false,udp-relay=false
+🇸🇰 www.bsbb.cc ss-SK 77ms = ss,62.210.88.22,443,encrypt-method=chacha20-ietf-poly1305,password=WDavBimDmH2QLxljf5PSO1,tfo=false,udp-relay=false
+🇨🇴 www.bsbb.cc ss-CO 146ms = ss,46.226.163.225,57456,encrypt-method=chacha20-ietf-poly1305,password=c40641c1f89e7acb,tfo=false,udp-relay=false
+🇸🇬 www.bsbb.cc ss-SG 68ms = ss,104.167.197.25,57456,encrypt-method=chacha20-ietf-poly1305,password=360e21d21977dc11,tfo=false,udp-relay=false
+🇦🇺 www.bsbb.cc ss-AU 126ms = ss,107.191.63.241,30665,encrypt-method=null,tfo=false,udp-relay=false
+🇩🇰 www.bsbb.cc trojan-DK 57ms = trojan,36.150.215.137,5156,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 76ms = trojan,117.172.176.23,4553,password=e4e262d453466988575c397a30562337,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 56ms_1 = trojan,58.152.53.42,443,password=e4e262d453466988575c397a30562337,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+🇳🇿 www.bsbb.cc trojan-NZ 124ms = trojan,36.150.215.231,1655,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+🇦🇷 www.bsbb.cc trojan-AR 144ms = trojan,203.198.122.129,443,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 41ms = trojan,117.172.176.23,316,password=e4e262d453466988575c397a30562337,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 67ms = trojan,117.172.176.23,1332,password=e4e262d453466988575c397a30562337,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 56ms_2 = trojan,117.172.176.23,2283,password=e4e262d453466988575c397a30562337,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+🇸🇦 www.bsbb.cc trojan-SA 111ms = trojan,36.150.215.137,9713,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 37ms = trojan,160.16.231.103,3777,password=e4e262d453466988575c397a30562337,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+🇷🇺 www.bsbb.cc trojan-RU 56ms = trojan,36.150.215.245,9269,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+🇹🇭 www.bsbb.cc ss-TH 39ms = ss,future.chenyi.pw,23203,encrypt-method=null,tfo=false,udp-relay=false
+🇸🇮 www.bsbb.cc ss-SI 45ms = ss,yue-zz-xy.yuetoto.net,22030,encrypt-method=null,tfo=false,udp-relay=false
+🇸🇦 www.bsbb.cc ss-SA 112ms = ss,yue-zz-xy.yuetoto.net,22003,encrypt-method=null,tfo=false,udp-relay=false
+🇭🇷 www.bsbb.cc ss-HR 44ms = ss,yue-zz.yuetoto.net,22016,encrypt-method=null,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 110ms = trojan,58.152.53.42,443,password=bca467b8c15211d189008a93c7519d3b,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+🇷🇺 www.bsbb.cc ss-RU 57ms = ss,yue-zz.yuetoto.net,22021,encrypt-method=null,tfo=false,udp-relay=false
+🇹🇼 www.bsbb.cc ss-TW 64ms = ss,yue-zz.yuetoto.net,22040,encrypt-method=null,tfo=false,udp-relay=false
+🇪🇸 www.bsbb.cc ss-ES 64ms = ss,sl.fgmcx.top,41047,encrypt-method=null,tfo=false,udp-relay=false
+🇩🇰 www.bsbb.cc ss-DK 79ms = ss,78.40.116.11,50589,encrypt-method=chacha20-ietf-poly1305,password=e0AuSSE9kqrZnpK1RgcuPt,tfo=false,udp-relay=false
+🇬🇷 www.bsbb.cc ss-GR 75ms = ss,15.235.186.140,8443,encrypt-method=aes-256-gcm,password=bd080898-b41a-48ae-b164-1baae4124627,tfo=false,udp-relay=false
+🇨🇱 www.bsbb.cc ss-CL 47ms = ss,sl.fgmcx.top,41047,encrypt-method=chacha20-ietf-poly1305,password=014e90df-a3ee-4654-a9f6-d118e02dd02a,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 85ms = trojan,oss-cn-shanghai.letssepub.com,20021,password=adbac894-90b9-4913-b77e-a715a8d4ebc8,skip-cert-verify=true,sni=dingding-doc.com,tfo=false,udp-relay=false
+🇵🇱 www.bsbb.cc ss-PL 126ms = ss,210.16.183.120,41047,encrypt-method=chacha20-ietf-poly1305,password=014e90df-a3ee-4654-a9f6-d118e02dd02a,tfo=false,udp-relay=false
+🇷🇺 www.bsbb.cc ss-RU 36ms = ss,210.16.183.122,41047,encrypt-method=chacha20-ietf-poly1305,password=014e90df-a3ee-4654-a9f6-d118e02dd02a,tfo=false,udp-relay=false
+🇸🇮 www.bsbb.cc ss-SI 59ms_2 = ss,62.133.63.230,1580,encrypt-method=chacha20-ietf-poly1305,password=KgcKQpFCkXnOJXceV68o12,tfo=false,udp-relay=false
+🇵🇰 www.bsbb.cc ss-PK 149ms = ss,liubu9.singdns.com,17459,encrypt-method=aes-128-gcm,password=57bc0c04-8184-48f5-906b-897d095ed445,tfo=false,udp-relay=false
+🇦🇺 www.bsbb.cc ss-AU 64ms = ss,195.66.27.81,11746,encrypt-method=chacha20-ietf-poly1305,password=DaiJfYM6WoCXmBbF69QFR0,tfo=false,udp-relay=false
+🇳🇱 www.bsbb.cc ss-NL 39ms = ss,sl.fgmcx.top,41047,encrypt-method=chacha20-ietf-poly1305,password=014e90df-a3ee-4654-a9f6-d118e02dd02a,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 141ms = trojan,oss-cn-shanghai.letssepub.com,20021,password=adbac894-90b9-4913-b77e-a715a8d4ebc8,skip-cert-verify=true,sni=dingding-doc.com,tfo=false,udp-relay=false
+🇮🇳 www.bsbb.cc trojan-IN 45ms = trojan,oss-cn-shanghai.letssepub.com,20021,password=adbac894-90b9-4913-b77e-a715a8d4ebc8,skip-cert-verify=true,sni=dingding-doc.com,tfo=false,udp-relay=false
+🇳🇿 www.bsbb.cc ss-NZ 44ms = ss,210.16.183.120,41047,encrypt-method=chacha20-ietf-poly1305,password=014e90df-a3ee-4654-a9f6-d118e02dd02a,tfo=false,udp-relay=false
+🇭🇺 www.bsbb.cc ss-HU 94ms = ss,switcher-nick-croquet.freesocks.work,443,encrypt-method=chacha20-ietf-poly1305,password=9tqhMdIrTkgQ46PvhyAtMH,tfo=false,udp-relay=false
+🇦🇷 www.bsbb.cc ss-AR 140ms = ss,arxfw2b78fi2q9hzylhn.freesocks.work,443,encrypt-method=chacha20-ietf-poly1305,password=Nk9asglDzHzjktVzTkvhaA,tfo=false,udp-relay=false
+🇨🇴 www.bsbb.cc ss-CO 51ms = ss,switcher-nick-croquet.freesocks.work,443,encrypt-method=chacha20-ietf-poly1305,password=9tqhMdIrTkgQ46PvhyAtMH,tfo=false,udp-relay=false
+🇫🇮 www.bsbb.cc ss-FI 141ms = ss,arxfw2b78fi2q9hzylhn.freesocks.work,443,encrypt-method=chacha20-ietf-poly1305,password=Nk9asglDzHzjktVzTkvhaA,tfo=false,udp-relay=false
+🇫🇷 www.bsbb.cc ss-FR 105ms = ss,switcher-nick-croquet.freesocks.work,443,encrypt-method=chacha20-ietf-poly1305,password=9tqhMdIrTkgQ46PvhyAtMH,tfo=false,udp-relay=false
+🇮🇪 www.bsbb.cc ss-IE 96ms = ss,210.16.183.122,41047,encrypt-method=chacha20-ietf-poly1305,password=014e90df-a3ee-4654-a9f6-d118e02dd02a,tfo=false,udp-relay=false
