@@ -17,3 +17,5 @@ TW WAP 12 @SubscriptionShare = vmess,111.47.247.155,16616,username=30384ed4-bbf0
 US+Apple+05+@SubscriptionShare = trojan,120.233.29.183,13207,password=f67190ba-fea1-483a-bf4c-4fa76d779507,skip-cert-verify=true,sni=140.yuanul.com,tfo=false,udp-relay=false
 CN CUCB 01 @SubscriptionShare = vmess,60.215.152.142,80,username=9558aeaa-2e87-4289-89e8-a526fea6b8d0,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/,ws-headers=host:"tms.dingtalk.com",sni=60.215.152.142,skip-cert-verify=true,tfo=false,udp-relay=false
 FR OVH 01 @SubscriptionShare = vmess,125.78.88.110,16644,username=321c0b59-ce7a-4389-836e-e39b47a05c8c,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/,ws-headers=host:"25b712810f3c4ad5f6761adfe50bfe2d.mobgslb.tbcache.com",sni=125.78.88.110,skip-cert-verify=true,tfo=false,udp-relay=false
+SCP|SG = trojan,206.206.77.237,51469,password=LxJCPOP40a,skip-cert-verify=true,sni=cloudflare.com,tfo=false,udp-relay=false
+SCP|CA = trojan,209.200.246.53,10785,password=D3OJA7xY5U,skip-cert-verify=true,sni=cloudflare.com,tfo=false,udp-relay=false
