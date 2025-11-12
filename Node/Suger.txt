@@ -1,24 +1,10 @@
-https://t.me/ForceRunVPN-🇭🇰-HongKong-793ms-Alibaba (US) Technology Co. Ltd. = vmess,8.217.159.96,47872,username=23ea0b75-206b-4e3b-b624-e093d5808bf8,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=8.217.159.96,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/ForceRunVPN-🇯🇵-Tokyo-377ms-Alibaba Cloud LLC = vmess,47.74.10.111,34221,username=07a5f229-899d-43dd-beb0-f1412a2a85fd,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=47.74.10.111,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/ForceRunVPN-🇭🇰-HongKong-2949ms-Alibaba (US) Technology Co. Ltd. = vmess,8.217.34.12,23477,username=80975d47-7f6a-436d-9085-4dadf4546e03,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=8.217.34.12,skip-cert-verify=true,tfo=false,udp-relay=false
-🇭🇰HK-8.217.209.82-5370 = vmess,8.217.209.82,3600,username=d31a1f2f-b552-44fc-893a-6cf55fa2d4e3,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=8.217.209.82,skip-cert-verify=true,tfo=false,udp-relay=false
-Channel id: @ShadowProxy66  = vmess,47.238.109.55,36048,username=4452049a-2f3a-47e3-97f6-207992ad892b,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=47.238.109.55,skip-cert-verify=true,tfo=false,udp-relay=false
-🇭🇰 机场推荐:dafei.de 香港 13 = vmess,47.242.90.210,31212,username=3a4271fb-2718-4489-da78-80a8e7701aa5,tls=false,vmess-aead=false,tls13=false,sni=47.242.90.210,skip-cert-verify=true,tfo=false,udp-relay=false
-🇭🇰HK-8.217.209.82-5389 = vmess,8.217.209.82,6874,username=1f8a9781-3088-4499-8909-283826d05457,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=8.217.209.82,skip-cert-verify=true,tfo=false,udp-relay=false
-未知 1.5MB/s = vmess,210.3.159.150,42717,username=b5803d74-c6f8-415f-e1e6-ebc9e4269b86,tls=false,vmess-aead=false,tls13=false,ws=true,ws-path=/,sni=210.3.159.150,skip-cert-verify=true,tfo=false,udp-relay=false
-4Jadi-14515 = vmess,8.218.8.84,23326,username=871d04df-fc58-470a-baca-daae28869164,tls=false,vmess-aead=true,tls13=false,ws=true,ws-path=/arki?ed=2048,sni=8.218.8.84,skip-cert-verify=true,tfo=false,udp-relay=false
-[OpenRay] 🇩🇪 DE-18456 = vmess,57.129.28.70,443,username=03fcc618-b93d-6796-6aed-8a38c975d581,tls=true,vmess-aead=false,tls13=false,ws=true,ws-path=linkvws,ws-headers=host:"lammaland.org",sni=57.129.28.70,skip-cert-verify=true,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 111ms_1 = trojan,baigou1.kkieo555.cn,21863,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 146ms = trojan,baigou1.kkieo555.cn,21866,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 87ms = trojan,baigou1.kkieo555.cn,21867,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 107ms = trojan,baigou1.kkieo555.cn,21868,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 145ms = trojan,baigou1.kkieo555.cn,21869,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 127ms = trojan,baigou1.kkieo555.cn,21864,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 84ms = trojan,baigou1.kkieo555.cn,21865,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 118ms_1 = trojan,baigou1.kkieo555.cn,27865,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 45ms = trojan,baigou1.kkieo555.cn,21870,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 80ms = trojan,baigou1.kkieo555.cn,21871,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 141ms = trojan,baigou1.kkieo555.cn,21874,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 111ms_2 = trojan,baigou1.kkieo555.cn,21876,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 36ms = trojan,baigou1.kkieo555.cn,21877,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
-🇮🇳 www.bsbb.cc trojan-IN 118ms_2 = trojan,baigou1.kkieo555.cn,21878,password=96c433ea-fbd3-4cf8-a868-ce3a9fe69f55,skip-cert-verify=true,sni=douyin.com,tfo=false,udp-relay=false
+日本-78.0MB/s = trojan,160.16.89.176,4095,password=1b57001bd214304027025a740b6cf1ac,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+日本-2.93MB/s = trojan,160.16.223.205,31409,password=1b57001bd214304027025a740b6cf1ac,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+越南-108.7KB/s = ss,103.186.154.33,38388,encrypt-method=aes-256-cfb,password=Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV,tfo=false,udp-relay=false
+香港-16.02MB/s = trojan,116.49.237.130,518,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+越南-216.7KB/s = ss,103.186.154.19,38388,encrypt-method=aes-256-cfb,password=Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV,tfo=false,udp-relay=false
+中转节点-15.83MB/s = trojan,36.150.215.246,4011,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+香港-2.05MB/s = trojan,116.49.237.130,2173,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+香港-11.91MB/s = trojan,219.76.135.188,443,password=1b57001bd214304027025a740b6cf1ac,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
+香港-570.5KB/s = trojan,203.198.122.97,443,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
+香港-31.58MB/s = trojan,219.77.239.35,443,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
