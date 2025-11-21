@@ -1,21 +1,34 @@
-日本-78.0MB/s = trojan,160.16.89.176,4095,password=1b57001bd214304027025a740b6cf1ac,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
-日本-2.93MB/s = trojan,160.16.223.205,31409,password=1b57001bd214304027025a740b6cf1ac,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
-越南-108.7KB/s = ss,103.186.154.33,38388,encrypt-method=aes-256-cfb,password=Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV,tfo=false,udp-relay=false
-香港-16.02MB/s = trojan,116.49.237.130,518,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
-越南-216.7KB/s = ss,103.186.154.19,38388,encrypt-method=aes-256-cfb,password=Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV,tfo=false,udp-relay=false
-中转节点-15.83MB/s = trojan,36.150.215.246,4011,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
-香港-2.05MB/s = trojan,116.49.237.130,2173,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
-香港-11.91MB/s = trojan,219.76.135.188,443,password=1b57001bd214304027025a740b6cf1ac,skip-cert-verify=true,sni=www.nintendogames.net,tfo=false,udp-relay=false
-香港-570.5KB/s = trojan,203.198.122.97,443,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
-香港-31.58MB/s = trojan,219.77.239.35,443,password=BxceQaOe,skip-cert-verify=true,sni=t.me/ripaojiedian,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_1 = trojan,120.233.151.17,22745,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_2 = trojan,120.197.94.136,38193,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_3 = trojan,211.72.156.83,15682,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_4 = trojan,61.221.84.27,18427,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_5 = trojan,61.221.110.227,10226,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_6 = trojan,120.233.151.18,28115,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_7 = trojan,120.197.94.138,28115,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_8 = trojan,120.233.151.18,28114,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_9 = trojan,120.197.94.138,28114,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-https://t.me/zyzzzoao ⚡️_10 = trojan,120.233.151.18,28101,password=rK9Z8c,skip-cert-verify=true,tfo=false,udp-relay=false
-
+官方优选_1 = trojan,198.41.223.59,2087,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/pics/categories,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_2 = trojan,108.162.198.73,8443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/products/zh-cn/photos/search,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_3 = trojan,162.159.153.205,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/chat,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_4 = trojan,108.162.198.57,2053,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/favourites/version/magnet/contact,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_5 = trojan,104.26.10.254,8443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/classify/shows/anime,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_6 = trojan,104.19.54.219,2096,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/collect,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_7 = trojan,108.162.198.183,2053,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/city/game/blogs/about,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_8 = trojan,162.159.153.138,2087,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/pic/game/ep,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_9 = trojan,104.19.62.42,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/retrieve/upload/site,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_10 = trojan,8.39.125.73,2087,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/service/feedback/jump.html/hot,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_11 = trojan,104.18.36.209,2087,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/topics/program,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_12 = trojan,8.39.125.164,8443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/pdf/team/documents/ajax,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_13 = trojan,162.159.152.92,2053,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/search/out/shop,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_14 = trojan,162.159.40.46,2083,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/groups/course,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_15 = trojan,8.39.125.252,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/messages/file/intro/dload,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+官方优选_16 = trojan,173.245.58.6,2053,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/help/go.html,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_1 = trojan,shopify.com,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/gif,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_2 = trojan,time.is,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/pic,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_3 = trojan,icook.hk,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/discount/auth/avatar/app,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_4 = trojan,icook.tw,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/readme/stars/my/programs,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_5 = trojan,ip.sb,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/register/,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_6 = trojan,japan.com,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/play/act,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_7 = trojan,malaysia.com,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/pic,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_8 = trojan,russia.com,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/tool/members/picture,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_9 = trojan,singapore.com,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/info/program,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_10 = trojan,skk.moe,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/lib/info/item/tv,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_11 = trojan,www.visa.com.sg,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/china,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_12 = trojan,www.visa.com.hk,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/type/apps/sort/services,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_13 = trojan,www.visa.com.tw,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/doujin/friend/edu/img,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_14 = trojan,www.visa.co.jp,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/news/login/manhua,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_15 = trojan,www.visakorea.com,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/f/cb,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_16 = trojan,www.gco.gov.qa,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_17 = trojan,www.gov.se,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/content/tool/mall,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
+视频优选_18 = trojan,www.gov.ua,443,password=d04f3d8a-be3c-4452-a247-35ee23727374,skip-cert-verify=true,sni=edga.cuarentas.dpdns.org,ws=true,ws-path=/mag/groups/doujin/edu,ws-headers=host:"edga.cuarentas.dpdns.org",tfo=false,udp-relay=false
