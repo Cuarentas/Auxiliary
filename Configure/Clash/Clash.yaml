@@ -503,6 +503,10 @@ rules:
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
 # 本地/局域网地址
 # Router managed 路由器管理域名
+  - DOMAIN-KEYWORD,macked,🌍 国外媒体
+  - DOMAIN-SUFFIX,vk.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,userapi.com,🌍 国外媒体
+  - GEOIP,CN,🎯 全球直连
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -4124,8 +4128,4 @@ rules:
   - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
   - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
-  - DOMAIN-KEYWORD,macked,Proxy
-  - DOMAIN-SUFFIX,vk.com,Proxy
-  - DOMAIN-SUFFIX,userapi.com,Proxy
-  - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
