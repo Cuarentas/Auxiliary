@@ -300,3 +300,5 @@
 23-西班牙-158ms = trojan, 91.149.243.34, 443, password=06ef598c, sni=2026.hhhhh.eu.org, ws=true, ws-path=/91.149.243.34:443, ws-headers=Host:2026.hhhhh.eu.org
 21-西班牙-113ms = trojan, 51.91.40.26, 443, password=06ef598c, sni=2026.hhhhh.eu.org, ws=true, ws-path=/51.91.40.26:443, ws-headers=Host:2026.hhhhh.eu.org
 24-西班牙-81ms = trojan, 45.150.195.124, 443, password=06ef598c, sni=2026.hhhhh.eu.org, ws=true, ws-path=/45.150.195.124:443, ws-headers=Host:2026.hhhhh.eu.org
+SCP|CA = trojan, 209.200.246.105, 17837, password=YRw2bzmWwl, sni=aws.amazon.com
+SCP|US = trojan, 216.234.140.55, 47574, password=3PfyPiLUGm, sni=aws.amazon.com
